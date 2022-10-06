@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h2>1.What is box-sizing?</h2>
+        <p>
+            Box-sizing property defines how the width and height gets applied on an element. 
+            Default value of box-sizing is content-box, in this case the actual width of the box will be equal to
+            the border and padding and width of the box ( Actual width : width + border + padding ). 
+            In case when box-sizing is set to be border-box, then the actual width will be equal to the width of 
+            the box itself. Means if we will increase the padding or border of the box then it will not increase 
+            the width of the box.
+            <ol type="a">
+                <li>content-box (Default)</li>
+                <li>border-box</li>
+            </ol>
+        </p>
+        <div class="box content-box"></div>
+        <div class="box border-box"></div>
+    </section>
+    <section>
+        <h2>2.What is animation-delay?</h2>
+        <p>
+            It is a sub-property of CSS animation. It defines how long the animation has to wait before starting. 
+            Using the animation-delay property, you define the delay by specifying the number of seconds or 
+            milliseconds it should take before playing.
+        </p>
+        <div class="delay"></div>
+    </section>
+    <section>
+        <h2>3.Which property will you use to merge cells horizontally in a grid?</h2>
+        <p>
+            grid-column-start and grid-column-end property can be used to merge cells vertically. It also has a 
+            shorthand i.e., grid-column: start/end. If you want to merge two elements in row then we will have to 
+            use grid-row property inside the child element. Remember these properties are applicable only to child 
+            elements not to parent elements.
+        </p>
+        <div class="grid-container">
+            <div class="item item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>  
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </div>
+    </section>
+    <section>
+        <h2>4.Which property will you use to merge cells horizontally in a grid?</h2>
+        <p>
+            grid-row-start and grid-row-end property can be used to merge cells horizontally. It also has a shorthand 
+            i.e., grid-row: grid-row-start/grid-row-end;
+        </p>
+        <div class="grid-container1">
+            <div class="itema itemb">1</div>
+            <div class="itema">2</div>
+            <div class="itema">3</div>  
+            <div class="itema">4</div>
+            <div class="itema">5</div>
+            <div class="itema">6</div>
+    </div>
+    </section>
+    <section>
+        <h2>5.What is a Box-model?</h2>
+        <p>
+            The box model in CSS is a set of rules that determine how your web page is rendered on the internet. 
+            In this model, a rectangular box is generated for HTML elements. This box consists of first content, 
+            then padding, then border, and finally margin.
+        </p>
+        <div class="margin">Margin
+            <div class="border">Border
+                <div class="padding">Padding
+                    <div class="content">Content</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>6.What is the difference between display none and visibility hidden?</h2>
+        <b>display:none;</b>
+        <ul>
+            <li>The display: none property is used to hide elements without deleting them. It does not take up any space.</li>
+            <li>In this case, the tag is removed from the page, which allows other elements to fill in.</li>
+        </ul>
+        <b>visibility:hidden;</b>
+        <ul>
+            <li>The visibility: hidden property also hides an element, but affects the layout i.e., it takes up the space.</li>
+            <li>The element is hidden from view but not the page flow.</li>
+        </ul>
+    </section>
+</body>
+</html>
